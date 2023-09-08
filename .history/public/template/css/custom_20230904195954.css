@@ -1,0 +1,17 @@
+.temp-test {
+    position: relative;
+}
+
+.temp-test:hover + .temp-test-sub {
+    display: block;
+}
+
+.temp-test-sub {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 10px;
+    top: 100%;
+
+    background-color: red;
+}

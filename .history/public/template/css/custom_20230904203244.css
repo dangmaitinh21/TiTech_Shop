@@ -1,0 +1,35 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.dropdown .dropdown-content::before {
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    left: 0;
+    right: 0;
+    height: 10px;
+    top: -10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
