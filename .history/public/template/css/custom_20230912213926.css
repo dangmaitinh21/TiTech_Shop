@@ -1,0 +1,15 @@
+.payment {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+.payment::before {
+    content: "Credit or debit card";
+    position: absolute;
+    padding: 0 10px;
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-27px) translateX(3px);
+}

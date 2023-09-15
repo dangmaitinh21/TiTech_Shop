@@ -1,0 +1,29 @@
+.payment {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+.payment:focus {
+    color: red;
+}
+
+.payment::before {
+    content: "Credit or debit card";
+    position: absolute;
+    padding: 0 10px;
+    font-weight: bold;
+    color: rgb(180, 180, 180);
+    background-color: #fff;
+}
+
+@keyframes test {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-27px) translateX(3px);
+        opacity: 1;
+    }
+}
